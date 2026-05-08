@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #373737;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2em;
+}
+.highlight {
+    text-decoration: underline; 
+    font-size: 20px;
+    background-color: azure;
+    padding: 5px;
+}
+.toplinks{
+    background-color: #373737;
+    overflow: hidden;
+}
+.toplinks a{
+    float: left;
+    color: #f2f2f2;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.toplinks a:hover {
+    background-color: #f2f2f2;
+    color: #373737;
+    text-decoration: none;
+}
+.banner {
+    background-color: #d6d6d6;
+    padding: 20px;
+    text-align: center;
+    color: #373737;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.content {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+.sidebar {
+    float: left;
+    width: 30%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+@media screen and (max-width: 900px) {
+    .content, .sidebar {
+        width: 100%;
+        float: none;
+        border-bottom: #373737 1px solid;
+    }
+}
+
+.sidebar a {
+    color: #373737;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #373737;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+table{
+	 width: 80%;
+	 border-collapse: collapse;
+	 border: 1px solid #373737;
+	 margin: 0 auto;
+}
+table th{
+        border: 1px solid #373737;
+        padding: 8px;
+        background-color: #d6d6d6;
+        text-align: left;
+}
+table td{
+        border: 1px solid #373737;
+        padding: 8px;
+        text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #99f19d;
+}
+
+.team_img {
+    overflow: hidden;
+    text-align: center;
+}
+.team_img img {
+    width: 180px;
+    height: auto;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+.team_member{
+    display: inline-block;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #83dcff;
+    font-size: small;
+}
